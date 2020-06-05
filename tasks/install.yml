@@ -1,0 +1,7 @@
+---
+- name: Install apt-proxy-Package
+  apt:
+    name: [ "apt-cacher-ng" ]
+    state: present
+    update_cache: no
+  become: yes

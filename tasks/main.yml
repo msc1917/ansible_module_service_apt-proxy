@@ -1,0 +1,10 @@
+---
+- name: Install apt-proxy
+  include_tasks: install.yml
+  when: 
+    - "'apt-proxy' in services"
+
+- name: Setup apt-proxy
+  include_tasks: setup.yml
+  when:
+    - use_apt_proxy
