@@ -7,4 +7,4 @@
 - name: Setup apt-proxy
   include_tasks: setup.yml
   when:
-    - use_apt_proxy
+    - apt_proxy.use_apt_proxy
